@@ -16,7 +16,7 @@ if (!input[2]) {
 let interval = setInterval(()=> {
   timeleft --
   console.log(`Left: ${timeleft}s`)
-  
+
   if (timeleft == 0) {
     clearInterval(interval)
     process.exit(0)
