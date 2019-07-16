@@ -14,5 +14,5 @@ if (!input[2]) {
 }
 
 for (i=timeleft; i>0; i--) {
-  process.setInterval(()=>{console.log(`Left: ${i}s`)})
+  process.setInterval(()=>{console.log(`Left: ${i}s`)},1000)
 }
