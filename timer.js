@@ -7,7 +7,7 @@ if (!input[2]) {
 } else if (input[2].indexOf('s')>-1) {
   timeleft = parseInt(input[2].slice(0,-1),10)
 } else if (input[2].indexOf('min')>-1) {
-  timeleft = parseInt(input[2].slice(0,-3),10*60)
+  timeleft = parseInt(input[2].slice(0,-3),10)*60
 } else {
   console.log("Please enter a valid time")
   process.exit(1)
