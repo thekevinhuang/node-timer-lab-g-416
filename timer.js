@@ -16,4 +16,3 @@ if (!input[2]) {
 for (i=timeleft; i>0; i--) {
   process.setInterval(()=>{console.log(`Left: ${i}s`)})
 }
-
