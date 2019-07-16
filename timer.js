@@ -13,6 +13,11 @@ if (!input[2]) {
   process.exit(1)
 }
 
-for (i=timeleft; i>0; i--) {
-  process.setInterval(()=>{console.log(`Left: ${i}s`)},1000)
-}
+let interval = setInterval(()=> {
+  console.log(`Left: ${timeleft}s`)
+  timeleft --
+  if (timeleft == 0) {
+    clearInterval(interval)
+    process.exit(0)
+  }
+},1000)
